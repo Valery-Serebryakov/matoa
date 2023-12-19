@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Checkout</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231219221457">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="106" data-scroll-show class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<a href="home.htl" class="header__logo">
+						<img src="img/header/logo.svg" alt="logo">
+					</a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a class="menu__link" href="#">Watches</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Eyewear</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Accessories</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">News</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__controls">
+						<a href="#" class="header__search"></a>
+						<a data-da=".menu__list,520" href="#" class="header__log-in">Log In</a>
+						<a data-popup=".cart-popup" href="#" class="header__cart"></a>
+						<button type="button" class="header__ikon icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="order-registration">
+				<div class="order-registration__container">
+					<div data-tabs class="order-registration__tabs">
+						<nav data-tabs-titles class="order-registration__navigation">
+							<button type="button" class="order-registration__title order-registration__title_ch _tab-active">1. Checkout</button>
+							<button type="button" class="order-registration__title order-registration__title_pa">2. Payment</button>
+							<button type="button" class="order-registration__title order-registration__title_co">3. Confirmation</button>
+						</nav>
+						<div data-tabs-body class="order-registration__content">
+							<div class="order-registration__body checkout">
+								<div class="checkout__wrap">
+									<div class="checkout__item">
+										<div class="checkout__detail-order order-detail">
+											<h3 class="order-detail__title">Detail Order</h3>
+											<div class="order-detail__items">
+												<div class="order-detail__item">Subtotal</div>
+												<div class="order-detail__item">Rp 2.152.000</div>
+												<div class="order-detail__item">Shipping Cost</div>
+												<div class="order-detail__item">Rp 500.000</div>
+												<div class="order-detail__item">Promo Code</div>
+												<div class="order-detail__item">INDONESIA</div>
+												<div class="order-detail__item">Packaging</div>
+												<div class="order-detail__item">Rp 50.000</div>
+											</div>
+											<div class="order-detail__bottom">
+												<div class="order-detail__grand-total">Grand Total</div>
+												<div class="order-detail__amount">Rp 2.702.000</div>
+											</div>
+										</div>
+									</div>
+									<div class="checkout__item">
+										<form class="checkout__form" action="#">
+											<div class="checkout__billing-address address-billing">
+												<h3 class="address-billing__title">Billing Address</h3>
+												<div data-one-select class="address-billing__items">
+													<div class="address-billing__item">
+														<label class="address-billing__label" for="address-billing-fullname">Fullname</label>
+														<div class="address-billing__input">
+															<input id="address-billing-fullname" autocomplete="off" type="text" name="form[]" data-required data-error="Please provide a valid input" placeholder="Ex: Rasyidin Arsyad Nasution" class="input">
+														</div>
+													</div>
+													<div class="address-billing__item">
+														<label class="address-billing__label" for="address-billing-email-address">Email Address</label>
+														<div class="address-billing__input">
+															<input id="address-billing-email-address" autocomplete="off" type="text" name="form[]" data-required="email" data-error="Please provide a valid input" placeholder="Ex: rasyid.arsyad@gmail.com" class="input">
+														</div>
+													</div>
+													<div class="address-billing__item">
+														<label class="address-billing__label" for="address-billing-phone-number">Phone Number</label>
+														<div class="address-billing__input">
+															<input id="address-billing-phone-number" autocomplete="off" type="tel" name="form[]" data-required data-error="Please provide a valid input" placeholder="Ex: 089111888999" class="input">
+														</div>
+													</div>
+													<div class="address-billing__item">
+														<label class="address-billing__label" for="address-billing-shipping-address">Shipping Address</label>
+														<div class="address-billing__input">
+															<input id="address-billing-shipping-address" autocomplete="off" type="text" name="form[]" data-required data-error="Please provide a valid input" placeholder="Ex: Patriot Street Number 666, Ngaklik, Sleman" class="input">
+														</div>
+													</div>
+													<div class="address-billing__item">
+														<label for="address-billing-country" class="address-billing__label">Country</label>
+														<div class="address-billing__select">
+															<select data-scroll id="address-billing-country" name="form[]" class="form">
+																<option value="1" selected>United State of America (USA)</option>
+																<option value="2">Germany</option>
+																<option value="3">France</option>
+																<option value="4">England</option>
+															</select>
+														</div>
+													</div>
+													<div class="address-billing__item">
+														<label for="address-billing-state" class="address-billing__label">State/Province</label>
+														<div class="address-billing__select">
+															<select data-scroll id="address-billing-state" name="form[]" class="form">
+																<option value="1" selected>California</option>
+																<option value="2">Idaho</option>
+																<option value="3">Iowa</option>
+																<option value="4">Alabama</option>
+																<option value="5">Alaska</option>
+																<option value="6">Arizona</option>
+															</select>
+														</div>
+													</div>
+													<div class="address-billing__inner">
+														<div class="address-billing__item address-billing__item_city">
+															<label for="address-billing-city" class="address-billing__label">City</label>
+															<div class="address-billing__select">
+																<select data-scroll id="address-billing-city" name="form[]" class="form">
+																	<option value="1" selected>San Francisco</option>
+																	<option value="2">New York</option>
+																	<option value="3">Los Angeles</option>
+																	<option value="4">Chicago</option>
+																	<option value="5">Houston</option>
+																	<option value="6">Philadelphia</option>
+																	<option value="7">San Diego</option>
+																</select>
+															</div>
+														</div>
+														<div class="address-billing__item address-billing__item_zip">
+															<label class="address-billing__label" for="address-billing-zip-code">Zip Code</label>
+															<div class="address-billing__input">
+																<input id="address-billing-zip-code" autocomplete="off" type="text" name="form[]" data-required data-error="Please provide a valid input" placeholder="Ex: 94024" class="input">
+															</div>
+														</div>
+													</div>
+													<div class="address-billing__item">
+														<label for="address-billing-choose-courier" class="address-billing__label">Choose Courier</label>
+														<div class="address-billing__select">
+															<select data-scroll id="address-billing-choose-courier" name="form[]" class="form">
+																<option value="1" selected>DHL</option>
+																<option value="2">USPS</option>
+																<option value="3">Pilot Freight Services</option>
+																<option value="4">APC Postal Logistics</option>
+																<option value="5">Plimor</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="checkout__bottom">
+												<button class="checkout__button button button_transparent">Continue Shopping</button>
+												<button class="checkout__button button">Place My Order</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="order-registration__body payment">
+								<div class="payment__wrap">
+									<div class="payment__item">
+										<div class="payment__detail-order order-detail">
+											<h3 class="order-detail__title">Detail Order</h3>
+											<div class="order-detail__items">
+												<div class="order-detail__item">Subtotal</div>
+												<div class="order-detail__item">Rp 2.152.000</div>
+												<div class="order-detail__item">Shipping Cost</div>
+												<div class="order-detail__item">Rp 500.000</div>
+												<div class="order-detail__item">Promo Code</div>
+												<div class="order-detail__item">INDONESIA</div>
+												<div class="order-detail__item">Packaging</div>
+												<div class="order-detail__item">Rp 50.000</div>
+											</div>
+											<div class="order-detail__bottom">
+												<div class="order-detail__grand-total">Grand Total</div>
+												<div class="order-detail__amount">Rp 2.702.000</div>
+											</div>
+										</div>
+										<div class="payment__payment-detail detail-payment">
+											<div class="detail-payment__wrap">
+												<h3 class="detail-payment__title">Payment Detail</h3>
+												<div id="countdpwn" class="detail-payment__timer"></div>
+											</div>
+											<div class="detail-payment__text">
+												<p>Please make a payment according with the limit time specified, starting from now</p>
+											</div>
+										</div>
+									</div>
+									<div class="payment__item">
+										<div class="payment__detailed-information information-detailed">
+											<h3 class="information-detailed__title">Detailed Information</h3>
+											<div class="information-detailed__items">
+												<div class="information-detailed__item">Order Number</div>
+												<div class="information-detailed__item information-detailed__item_email">
+													<div class="information-detailed__inner">
+														<div class="information-detailed__element">MTAWEB-3A86D4DB</div>
+														<button class="information-detailed__copy">COPY</button>
+													</div>
+													<div class="information-detailed__info">
+														<p>Always remember Order Number for easy tracking</p>
+													</div>
+												</div>
+												<div class="information-detailed__item">Purchase Date</div>
+												<div class="information-detailed__item information-detailed__item_email">2019-11-07 14:01:48</div>
+												<div class="information-detailed__item">Items</div>
+												<div class="information-detailed__item information-detailed__item_email">
+													<div class="information-detailed__element">Way Kambas Mini Ebony</div>
+													<div class="information-detailed__info">
+														<p>2 x IDR 1.024.000</p>
+													</div>
+													<div class="information-detailed__element">Sikka (Ebony & Mapple)</div>
+													<div class="information-detailed__info">
+														<p>1 x IDR 1.264.000</p>
+													</div>
+												</div>
+												<div class="information-detailed__item">Name</div>
+												<div class="information-detailed__item information-detailed__item_email">Rasyidin Arsyad Nasution</div>
+												<div class="information-detailed__item">Phone</div>
+												<div class="information-detailed__item information-detailed__item_email">+18911188899</div>
+												<div class="information-detailed__item">Email</div>
+												<div class="information-detailed__item information-detailed__item_email">rasyid.arsyad@gmail.com</div>
+												<div class="information-detailed__item">Shipping Address</div>
+												<div class="information-detailed__item information-detailed__item_email">18 Richardson Drive Fountain Valley, CA 92708</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="payment__method method-payment">
+									<form action="#" class="method-payment__form">
+										<div class="method-payment__body">
+											<h3 class="method-payment__title">Payment Method</h3>
+											<div class="method-payment__wrap">
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-bni" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-bni" class="method-payment__label"><span>BNI Cicilan 0%</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/bni.webp" type="image/webp"><img src="img/order-registration/bni.png" alt="bni"></picture>
+														</div>
+													</div>
+												</div>
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-mandiri-cicilan" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-mandiri-cicilan" class="method-payment__label"><span>Mandiri Cicilan 0%</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/mandiri.webp" type="image/webp"><img src="img/order-registration/mandiri.png" alt="mandiri"></picture>
+														</div>
+													</div>
+												</div>
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-transfer" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-transfer" class="method-payment__label"><span>Bank Transfer</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/permata-bank.webp" type="image/webp"><img src="img/order-registration/permata-bank.png" alt="permata-bank"></picture>
+														</div>
+													</div>
+												</div>
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-credit-card" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-credit-card" class="method-payment__label"><span>Credit Card</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/master-card.webp" type="image/webp"><img src="img/order-registration/master-card.png" alt="credit card"></picture>
+														</div>
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/visa.webp" type="image/webp"><img src="img/order-registration/visa.png" alt="visa"></picture>
+														</div>
+													</div>
+												</div>
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-ccc" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-ccc" class="method-payment__label"><span>Credit Card Cicilan 0% (Danamon, UOB & Standard Chartered)</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/danamon.webp" type="image/webp"><img src="img/order-registration/danamon.png" alt="danamon"></picture>
+														</div>
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/uob.webp" type="image/webp"><img src="img/order-registration/uob.png" alt="uob"></picture>
+														</div>
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/standard-chartered.webp" type="image/webp"><img src="img/order-registration/standard-chartered.png" alt="standard-chartered"></picture>
+														</div>
+													</div>
+												</div>
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-gopay" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-gopay" class="method-payment__label"><span>GO-PAY</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/go-pay.webp" type="image/webp"><img src="img/order-registration/go-pay.png" alt="go-pay"></picture>
+														</div>
+													</div>
+												</div>
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-krdivo" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-krdivo" class="method-payment__label"><span>Krdivo</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/kredivo.webp" type="image/webp"><img src="img/order-registration/kredivo.png" alt="krdivo"></picture>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="method-payment__bottom">
+											<button class="method-payment__button button">Proceed Payment</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="order-registration__body confirmation">
+								<div class="confirmation__wrap">
+									<div class="confirmation__item">
+										<div class="confirmation__order-confirmed order-confirmed-confirmation">
+											<div class="order-confirmed-confirmation__image">
+												<img src="img/confirmation/image-order-confirmed.svg" alt="image order confirmed">
+											</div>
+											<div class="order-confirmed-confirmation__content">
+												<h3 class="order-confirmed-confirmation__title">Order Confirmed</h3>
+												<div class="order-confirmed-confirmation__text">
+													<p>Your order have been confirmed, please wait and track your order</p>
+												</div>
+												<button class="order-confirmed-confirmation__button button">Go to track page</button>
+											</div>
+										</div>
+									</div>
+									<div class="confirmation__item">
+										<div class="confirmation__right right-confirmation">
+											<div class="right-confirmation__delivery delivery">
+												<div class="delivery__term">10 days delivery</div>
+												<div class="delivery__company">DHL Express</div>
+											</div>
+											<div class="right-confirmation__desc">
+												<div class="right-confirmation__element">Way Kambas Mini Ebony</div>
+												<div class="right-confirmation__info">
+													<p>2 x IDR 1.024.000</p>
+												</div>
+												<div class="right-confirmation__element">Sikka (Ebony & Mapple)</div>
+												<div class="right-confirmation__info">
+													<p>1 x IDR 1.264.000</p>
+												</div>
+											</div>
+											<div class="right-confirmation__grid">
+												<div class="right-confirmation__item">Subtotal</div>
+												<div class="right-confirmation__item right-confirmation__item_price">Rp 2.152.000</div>
+												<div class="right-confirmation__item">Shipping Cost</div>
+												<div class="right-confirmation__item right-confirmation__item_price">Rp 500.000</div>
+												<div class="right-confirmation__item">Packaging</div>
+												<div class="right-confirmation__item right-confirmation__item_price">Rp 50.000</div>
+											</div>
+											<div class="right-confirmation__grand-total total-grand">
+												<div class="total-grand__label">Grand Total</div>
+												<div class="total-grand__info">Rp 2.702.000</div>
+											</div>
+											<div class="right-confirmation__shipping-address shipping-address-right-confirmation">
+												<div class="shipping-address-right-confirmation__label">Shipping Address</div>
+												<div class="shipping-address-right-confirmation__info">18 Richardson Drive Fountain Valley, CA 92708</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="footer__container">
+					<div class="footer__inner">
+						<div class="footer__image">
+							<picture><source srcset="img/footer/ibn.webp" type="image/webp"><img src="img/footer/ibn.png" alt="logo ibg"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/permata-bank.webp" type="image/webp"><img src="img/footer/permata-bank.png" alt="logo permata-bank"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/master-card.webp" type="image/webp"><img src="img/footer/master-card.png" alt="logo master-card"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/danamon.webp" type="image/webp"><img src="img/footer/danamon.png" alt="logo danamon"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/visa.webp" type="image/webp"><img src="img/footer/visa.png" alt="logo visa"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/mandiri.webp" type="image/webp"><img src="img/footer/mandiri.png" alt="logo mandiri"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/kredivo.webp" type="image/webp"><img src="img/footer/kredivo.png" alt="logo kredivo"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/uob.webp" type="image/webp"><img src="img/footer/uob.png" alt="logo uob"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/go-pay.webp" type="image/webp"><img src="img/footer/go-pay.png" alt="logo go-pay"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/standard-chartered.webp" type="image/webp"><img src="img/footer/standard-chartered.png" alt="logo standard-chartered"></picture>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__container">
+					<div class="footer__columns">
+						<div class="footer__column">
+							<div class="footer__logo">
+								<img src="img/footer/logo.svg" alt="logo">
+							</div>
+							<div class="footer__text">
+								<div class="footer__label">Address</div>
+								<p>Store & Office</p>
+								<p>Jl. Setrasari Kulon III, No. 10-12, Sukarasa, Sukasari, Bandung, Jawa Barat, Indonesia 40152</p>
+							</div>
+							<div class="footer__text">
+								<div class="footer__label">Office Hour</div>
+								<p>Monday - Sunday</p>
+								<p>10.00 - 18.00</p>
+							</div>
+						</div>
+						<div data-spollers="700.98" data-one-spoller class="footer__spollers spollers-footer">
+							<div class="spollers-footer__item spollers-footer__item_modified">
+								<button type="button" data-spoller class="spollers-footer__title"><span>Get in touch</span></button>
+								<div class="spollers-footer__body">
+									<ul class="spollers-footer__list spollers-footer__list_modified">
+										<li>Phone</li>
+										<li><a href="tel:02220277564">022-20277564</a></li>
+										<li>Service Center</li>
+										<li><a href="tel:08112338899">0811-233-8899</a></li>
+										<li>Customer Service</li>
+										<li><a href="tel:08112359988">0811-235-9988</a></li>
+									</ul>
+									<div data-da=".footer__columns,700.98" class="spollers-footer__socials">
+										<a href="#" class="spollers-footer__facebook">
+											<img src="img/footer/icons/facebook-icon.svg" alt="facebook icon">
+										</a>
+										<a href="#" class="spollers-footer__instagram">
+											<img src="img/footer/icons/instagram-ikon.svg" alt="instagram ikon">
+										</a>
+										<a href="#" class="spollers-footer__twitter">
+											<img src="img/footer/icons/twitter-ikon.svg" alt="twitter ikon">
+										</a>
+										<a href="#" class="spollers-footer__youtube">
+											<img src="img/footer/icons/youtube-ikon.svg" alt="youtube ikon">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="spollers-footer__item">
+								<button type="button" data-spoller class="spollers-footer__title"><span>Useful Link</span></button>
+								<div class="spollers-footer__body">
+									<ul class="spollers-footer__list">
+										<li><a href="#">Warranty & Complaints</a></li>
+										<li><a href="#">Order & Shipping</a></li>
+										<li><a href="#">Tracking Order</a></li>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Repair</a></li>
+										<li><a href="#">Terms</a></li>
+										<li><a href="#">FAQ</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers-footer__item">
+								<button type="button" data-spoller class="spollers-footer__title"><span>Campaign</span></button>
+								<div class="spollers-footer__body">
+									<ul class="spollers-footer__list">
+										<li><a href="#">Mengenal Arti Cukup</a></li>
+										<li><a href="#">Tell Your Difference</a></li>
+										<li><a href="#">Waykambas</a></li>
+										<li><a href="#">Rebrand</a></li>
+										<li><a href="#">Gallery</a></li>
+										<li><a href="#">Singo</a></li>
+										<li><a href="#">Rakai</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div aria-hidden="true" class="cart-popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content cart">
+				<button data-close type="button" class="cart__close"></button>
+				<div class="cart__body">
+					<div class="cart__card card-cart">
+						<div class="card-cart__left">
+							<div class="card-cart__image-ibg">
+								<picture><source srcset="img/cart/wkme.webp" type="image/webp"><img src="img/cart/wkme.jpg" alt="Way Kambas Mini Ebony"></picture>
+							</div>
+							<div class="card-cart__info">
+								<h6 class="card-cart__title">Way Kambas Mini Ebony</h6>
+								<div class="card-cart__old-price">Rp 1.280.000</div>
+								<div class="card-cart__price">Rp 1.024.000</div>
+								<div class="card-cart__meta meta-catd-cart">
+									<div class="meta-catd-cart__title">Custom Engrave</div>
+									<div class="meta-catd-cart__info">“Happy Birthday from”</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-cart__right">
+							<div class="card-cart__select select-card-cart">
+								<div class="select-card-cart__label">Select Packaging</div>
+								<select data-scroll name="form[]" class="select-card-cart__form">
+									<option value="1" selected>Wooden Packaging (Rp 50.000)</option>
+									<option value="2">Default Packaging (Free)</option>
+									<option value="3">Packaging (Rp 60.000)</option>
+									<option value="4">Packaging (Rp 70.000)</option>
+									<option value="5">Packaging (Rp 80.000)</option>
+								</select>
+							</div>
+							<div class="card-cart__wrap">
+								<div class="card-cart__quantity quantity">
+									<div class="quantity__button quantity__button_minus"></div>
+									<div class="quantity__input">
+										<input autocomplete="off" type="text" name="form[]" value="1">
+									</div>
+									<div class="quantity__button quantity__button_plus"></div>
+								</div>
+								<div class="card-cart__inner">
+									<div class="card-cart__final-price-product">Rp 2.048.000</div>
+									<div class="card-cart__trash">
+										<img src="img/cart/trash.svg" alt="icon trash">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart__card card-cart">
+						<div class="card-cart__left">
+							<div class="card-cart__image-ibg">
+								<picture><source srcset="img/cart/sikka.webp" type="image/webp"><img src="img/cart/sikka.jpg" alt="sikka"></picture>
+							</div>
+							<div class="card-cart__info">
+								<h6 class="card-cart__title">Sikka (Ebony & Maple)</h6>
+								<div class="card-cart__price">Rp 1.264.000</div>
+							</div>
+						</div>
+						<div class="card-cart__right">
+							<div class="card-cart__select select-card-cart">
+								<div class="select-card-cart__label">Select Packaging</div>
+								<select data-scroll name="form[]" class="select-card-cart__form">
+									<option value="1" selected>Default Packaging (Free)</option>
+									<option value="2">Wooden Packaging (Rp 50.000)</option>
+									<option value="3">Packaging (Rp 60.000)</option>
+									<option value="4">Packaging (Rp 70.000)</option>
+									<option value="5">Packaging (Rp 80.000)</option>
+								</select>
+							</div>
+							<div class="card-cart__wrap">
+								<div class="card-cart__quantity quantity">
+									<div class="quantity__button quantity__button_minus"></div>
+									<div class="quantity__input">
+										<input autocomplete="off" type="text" name="form[]" value="1">
+									</div>
+									<div class="quantity__button quantity__button_plus"></div>
+								</div>
+								<div class="card-cart__inner">
+									<div class="card-cart__final-price-product">Rp 1.264.000</div>
+									<button class="card-cart__trash">
+										<img src="img/cart/trash.svg" alt="icon trash">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart__bottom bottom-cart">
+						<div class="bottom-cart__wrap">
+							<div class="bottom-cart__left">
+								<div class="bottom-cart__kode-promo">Kode Promo</div>
+								<div class="bottom-cart__input">
+									<input autocomplete="off" type="text" name="form[]" placeholder="INDONESIA" class="input">
+								</div>
+								<div class="bottom-cart__discount">35% OFF</div>
+							</div>
+							<div class="bottom-cart__right right-bottom-cart">
+								<div class="right-bottom-cart__label">Subtotal</div>
+								<div class="right-bottom-cart__subtotal">
+									<div class="right-bottom-cart__old-price">Rp 3.312.000</div>
+									<div class="right-bottom-cart__price">Rp 2.152.000</div>
+								</div>
+							</div>
+						</div>
+						<button class="bottom-cart__button button">Checkout</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20231219221457"></script>
+</body>
