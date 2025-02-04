@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Checkout</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250204160010">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="106" data-scroll-show class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<a href="home.htl" class="header__logo">
+						<img src="img/header/logo.svg" alt="logo">
+					</a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a class="menu__link" href="#">Часы</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Очки</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Аксессуары</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__controls">
+						<a href="#" class="header__search"></a>
+						<a data-da=".menu__list,520" href="#" class="header__log-in">Авторизация</a>
+						<a data-popup=".cart-popup" href="#" class="header__cart"></a>
+						<button type="button" class="header__ikon icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="order-registration">
+				<div class="order-registration__container">
+					<div data-tabs class="order-registration__tabs">
+						<nav data-tabs-titles class="order-registration__navigation">
+							<button type="button" class="order-registration__title order-registration__title_ch _tab-active">1. Оформление заказа</button>
+							<button type="button" class="order-registration__title order-registration__title_pa">2. Оплата</button>
+							<button type="button" class="order-registration__title order-registration__title_co">3. Подтверждение</button>
+						</nav>
+						<div data-tabs-body class="order-registration__content">
+							<div class="order-registration__body checkout">
+								<div class="checkout__wrap">
+									<div class="checkout__item">
+										<div class="checkout__detail-order order-detail">
+											<h3 class="order-detail__title">Заказ</h3>
+											<div class="order-detail__items">
+												<div class="order-detail__item">Промежуточный итог</div>
+												<div class="order-detail__item">Цена: 2 152</div>
+												<div class="order-detail__item">Стоимость доставки</div>
+												<div class="order-detail__item">Цена: 500</div>
+												<div class="order-detail__item">Промокод</div>
+												<div class="order-detail__item">INDONESIA</div>
+												<div class="order-detail__item">Упаковка</div>
+												<div class="order-detail__item">Цена: 50</div>
+											</div>
+											<div class="order-detail__bottom">
+												<div class="order-detail__grand-total">Итого:</div>
+												<div class="order-detail__amount">Цена: 2 702</div>
+											</div>
+										</div>
+									</div>
+									<div class="checkout__item">
+										<form class="checkout__form" action="#">
+											<div class="checkout__billing-address address-billing">
+												<h3 class="address-billing__title">Платежный адрес</h3>
+												<div data-one-select class="address-billing__items">
+													<div class="address-billing__item">
+														<label class="address-billing__label" for="address-billing-fullname">ФИО</label>
+														<div class="address-billing__input">
+															<input id="address-billing-fullname" autocomplete="off" type="text" name="form[]" data-required data-error="Укажите корректные данные" placeholder="Иванов Иван Иванович" class="input">
+														</div>
+													</div>
+													<div class="address-billing__item">
+														<label class="address-billing__label" for="address-billing-email-address">Email</label>
+														<div class="address-billing__input">
+															<input id="address-billing-email-address" autocomplete="off" type="text" name="form[]" data-required="email" data-error="Укажите корректные данные" placeholder="rasyid.arsyad@gmail.com" class="input">
+														</div>
+													</div>
+													<div class="address-billing__item">
+														<label class="address-billing__label" for="address-billing-phone-number">Номер телефона</label>
+														<div class="address-billing__input">
+															<input id="address-billing-phone-number" autocomplete="off" type="tel" name="form[]" data-required data-error="Укажите корректные данные" placeholder="+79234567898" class="input">
+														</div>
+													</div>
+													<div class="address-billing__item">
+														<label for="address-billing-country" class="address-billing__label">Страна</label>
+														<div class="address-billing__select">
+															<select data-scroll id="address-billing-country" name="form[]" class="form">
+																<option value="1" selected>Россия</option>
+																<option value="2">Germany</option>
+																<option value="3">France</option>
+																<option value="4">England</option>
+															</select>
+														</div>
+													</div>
+													<div class="address-billing__item">
+														<label for="address-billing-state" class="address-billing__label">Край/Область</label>
+														<div class="address-billing__select">
+															<select data-scroll id="address-billing-state" name="form[]" class="form">
+																<option value="1" selected>Красноярский край</option>
+																<option value="2">Новосибирская область</option>
+																<option value="3">Lorem</option>
+																<option value="4">Lorem</option>
+																<option value="5">Lorem</option>
+																<option value="6">Lorem</option>
+															</select>
+														</div>
+													</div>
+													<div class="address-billing__inner">
+														<div class="address-billing__item address-billing__item_city">
+															<label for="address-billing-city" class="address-billing__label">Город</label>
+															<div class="address-billing__select">
+																<select data-scroll id="address-billing-city" name="form[]" class="form">
+																	<option value="1" selected>Красноярск</option>
+																	<option value="2">Москва</option>
+																	<option value="3">Lorem</option>
+																	<option value="4">Lorem</option>
+																	<option value="5">Lorem</option>
+																	<option value="6">Lorem</option>
+																	<option value="7">Lorem</option>
+																</select>
+															</div>
+														</div>
+														<div class="address-billing__item address-billing__item_zip">
+															<label class="address-billing__label" for="address-billing-zip-code">Индекс</label>
+															<div class="address-billing__input">
+																<input id="address-billing-zip-code" autocomplete="off" type="text" name="form[]" data-required data-error="Пожалуйста, укажите корректные данные" placeholder="667000" class="input">
+															</div>
+														</div>
+													</div>
+													<div class="address-billing__item">
+														<label class="address-billing__label" for="address-billing-shipping-address">Адрес доставки</label>
+														<div class="address-billing__input">
+															<input id="address-billing-shipping-address" autocomplete="off" type="text" name="form[]" data-required data-error="Укажите корректные данные" placeholder="ул. Ленина, д. 10, кв. 1" class="input">
+														</div>
+													</div>
+													<div class="address-billing__item">
+														<label for="address-billing-choose-courier" class="address-billing__label">Служба доставки</label>
+														<div class="address-billing__select">
+															<select data-scroll id="address-billing-choose-courier" name="form[]" class="form">
+																<option value="1" selected>DHL</option>
+																<option value="2">СДЭК</option>
+																<option value="3">Lorem</option>
+																<option value="4">Lorem</option>
+																<option value="5">Lorem</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="checkout__bottom">
+												<button class="checkout__button button button_transparent">Продолжить покупки</button>
+												<button class="checkout__button button">Оформить заказ</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="order-registration__body payment">
+								<div class="payment__wrap">
+									<div class="payment__item">
+										<div class="payment__detail-order order-detail">
+											<h3 class="order-detail__title">Заказ</h3>
+											<div class="order-detail__items">
+												<div class="order-detail__item">Промежуточный итог</div>
+												<div class="order-detail__item">Цена: 2 152</div>
+												<div class="order-detail__item">Стоимость доставки</div>
+												<div class="order-detail__item">Цена: 500</div>
+												<div class="order-detail__item">Промокод</div>
+												<div class="order-detail__item">INDONESIA</div>
+												<div class="order-detail__item">Упаковка</div>
+												<div class="order-detail__item">Цена: 50</div>
+											</div>
+											<div class="order-detail__bottom">
+												<div class="order-detail__grand-total">Итого:</div>
+												<div class="order-detail__amount">Цена: 2 702</div>
+											</div>
+										</div>
+										<div class="payment__payment-detail detail-payment">
+											<div class="detail-payment__wrap">
+												<h3 class="detail-payment__title">Реквизиты для оплаты</h3>
+												<div id="countdpwn" class="detail-payment__timer"></div>
+											</div>
+											<div class="detail-payment__text">
+												<p>Пожалуйста, произведите платеж в соответствии с указанным лимитом времени</p>
+											</div>
+										</div>
+									</div>
+									<div class="payment__item">
+										<div class="payment__detailed-information information-detailed">
+											<h3 class="information-detailed__title">Подробная информация</h3>
+											<div class="information-detailed__items">
+												<div class="information-detailed__item">номер заказа</div>
+												<div class="information-detailed__item information-detailed__item_email">
+													<div class="information-detailed__inner">
+														<div class="information-detailed__element">MTAWEB-3A86D4DB</div>
+														<button class="information-detailed__copy">COPY</button>
+													</div>
+													<div class="information-detailed__info">
+														<p>Сохраните номер заказа для удобства отслеживания</p>
+													</div>
+												</div>
+												<div class="information-detailed__item">Дата покупки</div>
+												<div class="information-detailed__item information-detailed__item_email">2023-11-07 14:01:48</div>
+												<div class="information-detailed__item">Товары</div>
+												<div class="information-detailed__item information-detailed__item_email">
+													<div class="information-detailed__element">Way Kambas Mini Ebony</div>
+													<div class="information-detailed__info">
+														<p>2 x IDR 1.024.000</p>
+													</div>
+													<div class="information-detailed__element">Sikka (Ebony & Mapple)</div>
+													<div class="information-detailed__info">
+														<p>1 x IDR 1.264.000</p>
+													</div>
+												</div>
+												<div class="information-detailed__item">Имя</div>
+												<div class="information-detailed__item information-detailed__item_email">Иванов Иван Иванович</div>
+												<div class="information-detailed__item">Телефон</div>
+												<div class="information-detailed__item information-detailed__item_email">+78911188899</div>
+												<div class="information-detailed__item">Email</div>
+												<div class="information-detailed__item information-detailed__item_email">arsyad@gmail.com</div>
+												<div class="information-detailed__item">адрес доставки</div>
+												<div class="information-detailed__item information-detailed__item_email">ул. Ленина, д. 10, кв. 1</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="payment__method method-payment">
+									<form action="#" class="method-payment__form">
+										<div class="method-payment__body">
+											<h3 class="method-payment__title">Способ оплаты</h3>
+											<div class="method-payment__wrap">
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-bni" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-bni" class="method-payment__label"><span>BNI Cicilan 0%</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/bni.webp" type="image/webp"><img src="img/order-registration/bni.png" alt="bni"></picture>
+														</div>
+													</div>
+												</div>
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-mandiri-cicilan" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-mandiri-cicilan" class="method-payment__label"><span>Mandiri Cicilan 0%</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/mandiri.webp" type="image/webp"><img src="img/order-registration/mandiri.png" alt="mandiri"></picture>
+														</div>
+													</div>
+												</div>
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-transfer" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-transfer" class="method-payment__label"><span>Bank Transfer</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/permata-bank.webp" type="image/webp"><img src="img/order-registration/permata-bank.png" alt="permata-bank"></picture>
+														</div>
+													</div>
+												</div>
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-credit-card" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-credit-card" class="method-payment__label"><span>Credit Card</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/master-card.webp" type="image/webp"><img src="img/order-registration/master-card.png" alt="credit card"></picture>
+														</div>
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/visa.webp" type="image/webp"><img src="img/order-registration/visa.png" alt="visa"></picture>
+														</div>
+													</div>
+												</div>
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-ccc" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-ccc" class="method-payment__label"><span>Credit Card Cicilan 0% (Danamon, UOB & Standard Chartered)</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/danamon.webp" type="image/webp"><img src="img/order-registration/danamon.png" alt="danamon"></picture>
+														</div>
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/uob.webp" type="image/webp"><img src="img/order-registration/uob.png" alt="uob"></picture>
+														</div>
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/standard-chartered.webp" type="image/webp"><img src="img/order-registration/standard-chartered.png" alt="standard-chartered"></picture>
+														</div>
+													</div>
+												</div>
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-gopay" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-gopay" class="method-payment__label"><span>GO-PAY</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/go-pay.webp" type="image/webp"><img src="img/order-registration/go-pay.png" alt="go-pay"></picture>
+														</div>
+													</div>
+												</div>
+												<div class="method-payment__item">
+													<div class="method-payment__redio">
+														<input hidden id="method-payment-krdivo" class="method-payment__input" type="radio" value="1" name="redio">
+														<label for="method-payment-krdivo" class="method-payment__label"><span>Krdivo</span></label>
+													</div>
+													<div class="method-payment__images">
+														<div class="method-payment__image">
+															<picture><source srcset="img/order-registration/kredivo.webp" type="image/webp"><img src="img/order-registration/kredivo.png" alt="krdivo"></picture>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="method-payment__bottom">
+											<button class="method-payment__button button">Продолжить оплату</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="order-registration__body confirmation">
+								<div class="confirmation__wrap">
+									<div class="confirmation__item">
+										<div class="confirmation__order-confirmed order-confirmed-confirmation">
+											<div class="order-confirmed-confirmation__image">
+												<img src="img/confirmation/image-order-confirmed.svg" alt="image order confirmed">
+											</div>
+											<div class="order-confirmed-confirmation__content">
+												<h3 class="order-confirmed-confirmation__title">Заказ подтвержден</h3>
+												<div class="order-confirmed-confirmation__text">
+													<p>Ваш заказ был подтвержден</p>
+												</div>
+												<button class="order-confirmed-confirmation__button button">Отследить заказ</button>
+											</div>
+										</div>
+									</div>
+									<div class="confirmation__item">
+										<div class="confirmation__right right-confirmation">
+											<div class="right-confirmation__delivery delivery">
+												<div class="delivery__term">доставка в течение 10 дней</div>
+												<div class="delivery__company">DHL Express</div>
+											</div>
+											<div class="right-confirmation__desc">
+												<div class="right-confirmation__element">Way Kambas Mini Ebony</div>
+												<div class="right-confirmation__info">
+													<p>2 x IDR 1.024.000</p>
+												</div>
+												<div class="right-confirmation__element">Sikka (Ebony & Mapple)</div>
+												<div class="right-confirmation__info">
+													<p>1 x IDR 1.264.000</p>
+												</div>
+											</div>
+											<div class="right-confirmation__grid">
+												<div class="right-confirmation__item">Промежуточный итог</div>
+												<div class="right-confirmation__item right-confirmation__item_price">Цена: 2 152</div>
+												<div class="right-confirmation__item">Стоимость доставки</div>
+												<div class="right-confirmation__item right-confirmation__item_price">Цена: 500.000</div>
+												<div class="right-confirmation__item">Упаковка</div>
+												<div class="right-confirmation__item right-confirmation__item_price">Цена: 50.000</div>
+											</div>
+											<div class="right-confirmation__grand-total total-grand">
+												<div class="total-grand__label">Итого</div>
+												<div class="total-grand__info">Цена: 2 702</div>
+											</div>
+											<div class="right-confirmation__shipping-address shipping-address-right-confirmation">
+												<div class="shipping-address-right-confirmation__label">адрес доставки</div>
+												<div class="shipping-address-right-confirmation__info">ул. Ленина, д. 10, кв. 1</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="footer__container">
+					<div class="footer__inner">
+						<div class="footer__image">
+							<picture><source srcset="img/footer/ibn.webp" type="image/webp"><img src="img/footer/ibn.png" alt="logo ibg"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/permata-bank.webp" type="image/webp"><img src="img/footer/permata-bank.png" alt="logo permata-bank"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/master-card.webp" type="image/webp"><img src="img/footer/master-card.png" alt="logo master-card"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/danamon.webp" type="image/webp"><img src="img/footer/danamon.png" alt="logo danamon"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/visa.webp" type="image/webp"><img src="img/footer/visa.png" alt="logo visa"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/mandiri.webp" type="image/webp"><img src="img/footer/mandiri.png" alt="logo mandiri"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/kredivo.webp" type="image/webp"><img src="img/footer/kredivo.png" alt="logo kredivo"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/uob.webp" type="image/webp"><img src="img/footer/uob.png" alt="logo uob"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/go-pay.webp" type="image/webp"><img src="img/footer/go-pay.png" alt="logo go-pay"></picture>
+						</div>
+						<div class="footer__image">
+							<picture><source srcset="img/footer/standard-chartered.webp" type="image/webp"><img src="img/footer/standard-chartered.png" alt="logo standard-chartered"></picture>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__container">
+					<div class="footer__columns">
+						<div class="footer__column">
+							<div class="footer__logo">
+								<img src="img/footer/logo.svg" alt="logo">
+							</div>
+							<div class="footer__text">
+								<div class="footer__label">Адрес</div>
+								<p>г. Москва, ул. Донская, д. 8 стр. 1, 119049</p>
+							</div>
+							<div class="footer__text">
+								<div class="footer__label">Рабочее время</div>
+								<p>Понедельник - Воскресенье</p>
+								<p>10.00 - 18.00</p>
+							</div>
+						</div>
+						<div data-spollers="700.98" data-one-spoller class="footer__spollers spollers-footer">
+							<div class="spollers-footer__item spollers-footer__item_modified">
+								<button type="button" data-spoller class="spollers-footer__title"><span>Контакты</span></button>
+								<div class="spollers-footer__body">
+									<ul class="spollers-footer__list spollers-footer__list_modified">
+										<li>Телефон</li>
+										<li class="spollers-footer__tel"><a href="tel:70000000000">+7 (351) 000-00-00</a></li>
+										<li>Сервисный центр</li>
+										<li class="spollers-footer__tel"><a href="tel:70000000001">+7 (351) 000-00-01</a></li>
+										<li>Обслуживание клиентов</li>
+										<li class="spollers-footer__tel"><a href="tel:70000000002">+7 (351) 000-00-02</a></li>
+									</ul>
+									<div data-da=".footer__columns,700.98" class="spollers-footer__socials">
+										<a href="#" class="spollers-footer__facebook">
+											<img src="img/footer/icons/facebook-icon.svg" alt="facebook icon">
+										</a>
+										<a href="#" class="spollers-footer__instagram">
+											<img src="img/footer/icons/instagram-ikon.svg" alt="instagram ikon">
+										</a>
+										<a href="#" class="spollers-footer__twitter">
+											<img src="img/footer/icons/twitter-ikon.svg" alt="twitter ikon">
+										</a>
+										<a href="#" class="spollers-footer__youtube">
+											<img src="img/footer/icons/youtube-ikon.svg" alt="youtube ikon">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="spollers-footer__item">
+								<button type="button" data-spoller class="spollers-footer__title"><span>Полезные ссылки</span></button>
+								<div class="spollers-footer__body">
+									<ul class="spollers-footer__list">
+										<li><a href="#">Гарантия и жалобы</a></li>
+										<li><a href="#">Заказ и доставка</a></li>
+										<li><a href="#">Отслеживание заказа</a></li>
+										<li><a href="#">О нас</a></li>
+										<li><a href="#">Ремонт</a></li>
+										<li><a href="#">Условия</a></li>
+										<li><a href="#">Вопросы</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers-footer__item">
+								<button type="button" data-spoller class="spollers-footer__title"><span>Компания</span></button>
+								<div class="spollers-footer__body">
+									<ul class="spollers-footer__list">
+										<li><a href="#">Галерея</a></li>
+										<li><a href="#">Lorem</a></li>
+										<li><a href="#">Lorem</a></li>
+										<li><a href="#">Lorem</a></li>
+										<li><a href="#">Lorem</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div aria-hidden="true" class="cart-popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content cart">
+				<button data-close type="button" class="cart__close"></button>
+				<div class="cart__body">
+					<div class="cart__card card-cart">
+						<div class="card-cart__left">
+							<div class="card-cart__image-ibg">
+								<picture><source srcset="img/cart/wkme.webp" type="image/webp"><img src="img/cart/wkme.jpg" alt="Way Kambas Mini Ebony"></picture>
+							</div>
+							<div class="card-cart__info">
+								<h6 class="card-cart__title">Way Kambas Mini Ebony</h6>
+								<div class="card-cart__old-price">Цена: 1 280</div>
+								<div class="card-cart__price">Цена: 1 024</div>
+								<div class="card-cart__meta meta-catd-cart">
+									<div class="meta-catd-cart__title">Гравировка</div>
+									<div class="meta-catd-cart__info">“Happy Birthday</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-cart__right">
+							<div class="card-cart__select select-card-cart">
+								<div class="select-card-cart__label">Выберите упаковку</div>
+								<select data-scroll name="form[]" class="select-card-cart__form">
+									<option value="1" selected>Lorem (Цена: 50)</option>
+									<option value="2">Обычная упаковка (Free)</option>
+									<option value="3">Lorem (Цена: 60)</option>
+									<option value="4">Lorem (Цена: 70)</option>
+									<option value="5">Lorem (Цена: 80)</option>
+								</select>
+							</div>
+							<div class="card-cart__wrap">
+								<div class="card-cart__quantity quantity">
+									<div class="quantity__button quantity__button_minus"></div>
+									<div class="quantity__input">
+										<input autocomplete="off" type="text" name="form[]" value="1">
+									</div>
+									<div class="quantity__button quantity__button_plus"></div>
+								</div>
+								<div class="card-cart__inner">
+									<div class="card-cart__final-price-product">Цена: 2 048</div>
+									<button class="card-cart__trash">
+										<img src="img/cart/trash.svg" alt="icon trash">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart__card card-cart">
+						<div class="card-cart__left">
+							<div class="card-cart__image-ibg">
+								<picture><source srcset="img/cart/sikka.webp" type="image/webp"><img src="img/cart/sikka.jpg" alt="sikka"></picture>
+							</div>
+							<div class="card-cart__info">
+								<h6 class="card-cart__title">Sikka (Ebony & Maple)</h6>
+								<div class="card-cart__price">Цена: 1 264</div>
+							</div>
+						</div>
+						<div class="card-cart__right">
+							<div class="card-cart__select select-card-cart">
+								<div class="select-card-cart__label">Выберите упаковку</div>
+								<select data-scroll name="form[]" class="select-card-cart__form">
+									<option value="1" selected>Обычная упаковка (Free)</option>
+									<option value="2">Lorem (Цена: 50)</option>
+									<option value="3">Lorem (Цена: 60)</option>
+									<option value="4">Lorem (Цена: 70)</option>
+									<option value="5">Lorem (Цена: 80)</option>
+								</select>
+							</div>
+							<div class="card-cart__wrap">
+								<div class="card-cart__quantity quantity">
+									<div class="quantity__button quantity__button_minus"></div>
+									<div class="quantity__input">
+										<input autocomplete="off" type="text" name="form[]" value="1">
+									</div>
+									<div class="quantity__button quantity__button_plus"></div>
+								</div>
+								<div class="card-cart__inner">
+									<div class="card-cart__final-price-product">Цена: 1 264</div>
+									<button class="card-cart__trash">
+										<img src="img/cart/trash.svg" alt="icon trash">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart__bottom bottom-cart">
+						<div class="bottom-cart__wrap">
+							<div class="bottom-cart__left">
+								<div class="bottom-cart__kode-promo">Промокод</div>
+								<div class="bottom-cart__input">
+									<input autocomplete="off" type="text" name="form[]" placeholder="INDONESIA" class="input">
+								</div>
+								<div class="bottom-cart__discount">35% OFF</div>
+							</div>
+							<div class="bottom-cart__right right-bottom-cart">
+								<div class="right-bottom-cart__label">Промежуточный итог</div>
+								<div class="right-bottom-cart__subtotal">
+									<div class="right-bottom-cart__old-price">Цена: 3 312</div>
+									<div class="right-bottom-cart__price">Цена: 2 152</div>
+								</div>
+							</div>
+						</div>
+						<button class="bottom-cart__button button">Заказать</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20250204160010"></script>
+</body>
